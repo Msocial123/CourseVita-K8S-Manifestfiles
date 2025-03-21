@@ -1,0 +1,10 @@
+apiVersion: v1 
+kind: Pod 
+metadata:
+  name: organic-pod 
+spec: 
+  containers:
+    - name: sample-cont 
+      image: muralisocial123/organic-app-web:latest
+      ports:
+        - containerPort: 5656
