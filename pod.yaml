@@ -8,3 +8,8 @@ spec:
       image: muralisocial123/organic-app-web:latest
       ports:
         - containerPort: 5656
+    - name: example-cont 
+      image: muralisocial123/comcast-web-app:latest
+      ports:
+        - containerPort: 80
+    
