@@ -1,0 +1,15 @@
+apiVersion: v1 
+kind: Pod 
+metadata:
+  name: example-pod 
+spec: 
+  containers:
+    - name: sample-cont 
+      image: muralisocial123/organic-app-web:latest
+      ports:
+        - containerPort: 5656
+    - name: example-cont 
+      image: muralisocial123/comcast-web-app:latest
+      ports:
+        - containerPort: 80
+    
