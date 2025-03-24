@@ -3,7 +3,7 @@ kind: ReplicaSet
 metadata: 
   name: organic-app-rs 
 spec:
-  replicas: 5
+  replicas: 3
   selector:
     matchLabels:
       web: app
