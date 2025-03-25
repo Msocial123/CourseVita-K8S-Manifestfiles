@@ -1,0 +1,20 @@
+apiVersion: apps/v1 
+kind: Deployment 
+metadata:
+  name: organic-app-deployment 
+spec: 
+  replicas: 3
+  selector:
+    matchLabels:
+      web: organic
+  template:
+    metadata:
+      labels:
+        web: organic 
+    spec: 
+      containers:
+        - image: muralisocial123/organic-app-web:latest
+          name: sample-organic 
+          ports:
+            - containerPort: 5656
+          
