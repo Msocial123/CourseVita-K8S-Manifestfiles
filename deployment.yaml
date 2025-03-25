@@ -13,8 +13,8 @@ spec:
         web: organic 
     spec: 
       containers:
-        - image: muralisocial123/organic-app-web:latest
+        - image: muralisocial123/cart-page-test:1.0
           name: sample-organic 
           ports:
-            - containerPort: 5656
+            - containerPort: 3000
           
