@@ -17,4 +17,18 @@ spec:
           name: sample-organic 
           ports:
             - containerPort: 3000
+--- 
+apiVersion: v1 
+kind: Service
+metadata:
+  name: cart-page-svc
+spec:
+  selector:
+    web: organic 
+  ports:
+  - port: 3002 # Service Port or Host Port on which port number you are going access the application
+    targetPort: 3000 # On Which Port Number the application is going to working 
+    protocol: TCP 
+  type: ClusterIP   
+            
           
