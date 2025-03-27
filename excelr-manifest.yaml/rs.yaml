@@ -12,10 +12,11 @@ spec: # Defines the Replicaset Behaviour
        labels:
          app: web 
      spec: # Pod Behavior 
-       - image: muralisocial123/cart-page-test:1.0
-         name: test-cont 
-         ports:
-           - containerPort: 3000 
+       containers:
+         - image: muralisocial123/cart-page-test:1.0
+           name: test-cont 
+           ports:
+             - containerPort: 3000 
 
     
          
