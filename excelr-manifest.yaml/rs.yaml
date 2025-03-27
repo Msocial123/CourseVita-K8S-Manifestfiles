@@ -1,0 +1,22 @@
+apiVersion: apps/v1 
+kind: ReplicaSet 
+metadata:
+  name: sample-rs 
+spec: # Defines the Replicaset Behaviour
+  replicas: 3
+  selector:
+    matchLabels:
+      app: web  
+  template: # Pod Defination
+   metadata:
+     labels:
+       app: web 
+   spec: # Pod Behavior 
+     - image: muralisocial123/cart-page-test:1.0
+       name: test-cont 
+       ports:
+         - containerPort: 3000 
+
+    
+         
+      
