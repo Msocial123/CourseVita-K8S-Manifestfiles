@@ -29,6 +29,6 @@ spec:
   - port: 5657 # Service Port or Host Port on which port number you are going access the application
     targetPort: 5656 # On Which Port Number the application is going to working 
     protocol: TCP 
-  type: NodePort 
+  type: LoadBalancer
             
           
