@@ -1,7 +1,7 @@
 apiVersion: v1 
 kind: Pod 
 metadata: 
-  name: empty-dir-pod 
+  name: empty-dir-pod-1
 spec:
   restartPolicy: Never
   containers:
