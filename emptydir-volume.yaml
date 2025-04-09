@@ -10,13 +10,7 @@ spec:
       command: ['sh','-c','while true;do echo Sucess!! > /output/output.txt;sleep 5;done']
       volumeMounts:
         - name: my-volume
-          mountPath: /output
-    - image: busybox
-      name: busybox2 
-      command: ['sh','-c','while true;do cat /input/output.txt;sleep 5;done'] 
-      volumeMounts:
-        - name: my-volume 
-          mountPath: /input          
+          mountPath: /output        
   volumes:
     - name: my-volume
       emptyDir: {}    
